@@ -1,0 +1,8 @@
+services:
+  trial_docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: trial_docker:V1
+    working_dir: /app
+    command: bash -c "python flask_app.py"
