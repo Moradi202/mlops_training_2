@@ -3,6 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: trial_docker:V1
+    image: trial_docker:v1
     working_dir: /app
-    command: bash -c "python flask_app.py"
+    command: ["bash","-C", "python /app/flask_app.py"]
